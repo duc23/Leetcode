@@ -12,7 +12,7 @@ class Solution:
             # else it's a closed bracket, and make sure the type is the same at the top of the stack. If so, pop it off the stack since they match.
             elif stack and Map[parenthesis] == stack[-1]:
                 stack.pop()
-            # if there's no stack and they dont match, it's invalid
+            # if stack is empty or the parentheses dont match, it's invalid
             else: 
                 return False
         # after the loop, the stack should be empty 
